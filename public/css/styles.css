@@ -1,0 +1,66 @@
+html, body {
+  height: 100%;
+  font-family: 'Roboto Mono', monospace;
+  background-image: linear-gradient(to bottom, #311847, #3EB9E6);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  margin: 0.5rem;
+}
+
+p {
+  margin: 0.5rem 0 3rem;
+}
+
+.sun {
+  height: 3rem;
+  width: auto;
+  animation: sun 9s infinite;
+  animation-timing-function: linear
+}
+
+.weather-box {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.input-class {
+  height: 2.75rem;
+  width: 15rem;
+  font-size: 1rem;
+  position: relative;
+  border: 2px solid #cdcdcd;
+  border-color: rgba(0, 0, 0, .14);
+  background-color: AliceBlue;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.button {
+  background-color: #311847;
+  color: #f1f1f1;
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #f1f1f1;
+  color: #311847;
+}
+
+@keyframes sun {
+  100% {
+    transform: rotate(360deg)
+  }
+}
